@@ -1,0 +1,173 @@
+/* CSS */
+body{
+	padding:0px;
+	margin:0px;
+	width: 95%;
+    margin: auto;
+    height: 100vh;
+}
+#dash1{
+	background-image: url("https://get.pxhere.com/photo/man-person-technology-professional-profession-medicine-health-science-mask-background-laboratory-oxygen-doctor-service-gloves-medical-blouse-virus-technician-surgeon-scientist-treatment-of-disease-medical-world-pathologist-microbiologist-searcher-caregivers-protective-equipment-research-center-microbes-anesthesiologist-surgical-technologist-operating-theater-disease-prevention-medical-equipment-healthcare-science-medical-examiner-medical-glove-magnifying-glasses-isolation-of-bacteria-sterile-room-surgeon's-assistant-1412608.jpg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	opacity: 0.3;
+}
+
+option{
+	border-radius: 20px;
+}
+
+.centerTextPanel{
+	position: absolute;
+    top: 20vw;	
+    width: 80%;
+	color: black;
+}
+
+#QV07,#QV08{
+	height: 10vh;
+}
+
+#QV01{
+	height: 75vh;
+}
+
+#QV04, #QV06{
+	height: 38vh;
+}
+
+#QV11{
+	width: 100%;
+	height: 70px;
+}
+
+iframe{
+	position: absolute;
+	height: 93vh;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+#btnCollapse{
+	position: fixed;
+	top: 60px;
+	right: 21vw;
+	z-index: 1;
+	background: transparent;
+	border: transparent;
+}
+
+#btnCollapse:active{
+	border: transparent;
+	box-shadow: 0px;
+}
+
+.collapse1.show{
+	display: block;
+}
+
+.collapse1{
+	display: none;
+}
+
+.collapsing{
+	position: relative;
+	width: 0px;
+	overflow: hidden;
+	transition: width 0.35s ease;
+}
+
+.collapsing1{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: width 0.35s ease;
+}
+
+.loader {
+  font-size: 10px;
+  margin: 1% auto;
+  top:-100px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+}
+
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0em -3em 0em 0.2em #000000, 2em -2em 0 0em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 0em #000000;
+  }
+  12.5% {
+    box-shadow: 0em -3em 0em 0em #000000, 2em -2em 0 0.2em #000000, 3em 0em 0 0em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  25% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 0em #000000, 3em 0em 0 0.2em #000000, 2em 2em 0 0em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  37.5% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 0em #000000, 2em 2em 0 0.2em #000000, 0em 3em 0 0em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  50% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 0em #000000, 0em 3em 0 0.2em #000000, -2em 2em 0 0em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  62.5% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 0em #000000, -2em 2em 0 0.2em #000000, -3em 0em 0 0em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  75% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 0em #000000, -3em 0em 0 0.2em #000000, -2em -2em 0 0em #000000;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0em 0em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 0em #000000, -3em 0em 0 0em #000000, -2em -2em 0 0.2em #000000;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0em -3em 0em 0.2em #000000, 2em -2em 0 0em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 0em #000000;
+  }
+  12.5% {
+    box-shadow: 0em -3em 0em 0em #000000, 2em -2em 0 0.2em #000000, 3em 0em 0 0em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  25% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 0em #000000, 3em 0em 0 0.2em #000000, 2em 2em 0 0em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  37.5% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 0em #000000, 2em 2em 0 0.2em #000000, 0em 3em 0 0em #000000, -2em 2em 0 -0.5em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  50% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 0em #000000, 0em 3em 0 0.2em #000000, -2em 2em 0 0em #000000, -3em 0em 0 -0.5em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  62.5% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 0em #000000, -2em 2em 0 0.2em #000000, -3em 0em 0 0em #000000, -2em -2em 0 -0.5em #000000;
+  }
+  75% {
+    box-shadow: 0em -3em 0em -0.5em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 0em #000000, -3em 0em 0 0.2em #000000, -2em -2em 0 0em #000000;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0em 0em #000000, 2em -2em 0 -0.5em #000000, 3em 0em 0 -0.5em #000000, 2em 2em 0 -0.5em #000000, 0em 3em 0 -0.5em #000000, -2em 2em 0 0em #000000, -3em 0em 0 0em #000000, -2em -2em 0 0.2em #000000;
+  }
+}
