@@ -36,80 +36,69 @@ var dashboard2 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-alig
 		
 var dashboard3 ='<h1 style="position: absolute; top: 50px; z-index: 1; text-align: center; width: 100%;">INSTITUCIONES CON MEJOR PUNTUACIÓN</h1>';
 
-document.getElementById("charging").innerHTML = charging;
-setTimeout(() => {  
-	document.getElementById("charging").style.display = "none";
-	document.getElementById("controlPanel").style.display = "block";
-	document.getElementById("panel").className = "col-sm-3 collapse1 show";
-	var selectElement = document.getElementById('sel1');
-	document.getElementById("dashboard").innerHTML = dashboard0;
+document.getElementById("controlPanel").style.display = "block";
+document.getElementById("panel").className = "col-sm-3 collapse1 show";
+var selectElement = document.getElementById('sel1');
 
-	selectElement.addEventListener('change', (event) => {
-	if(selectElement.selectedIndex==0){
-		document.getElementById("dashboard").innerHTML = dashboard0;
-		document.getElementById("qlik").style.display="none";
-		document.getElementById("qlik1").style.display="none";
-		document.getElementById("qlik2").style.display="none";
-		document.getElementById("qlik3").style.display="none";
-		document.getElementById("qlik4").style.display="none";
-		document.getElementById("qlik5").style.display="none";
-	}
-	if(selectElement.selectedIndex==1){
-		document.getElementById("dashboard").innerHTML = dashboard1;
-		document.getElementById("qlik").style.display="block";
-		document.getElementById("qlik1").style.display="none";
-		document.getElementById("qlik2").style.display="none";
-		document.getElementById("qlik3").style.display="none";
-		document.getElementById("qlik4").style.display="none";
-		document.getElementById("qlik5").style.display="none";
-	}
-	if(selectElement.selectedIndex==2){
-		document.getElementById("dashboard").innerHTML = dashboard2;
-		document.getElementById("qlik").style.display="none";
-		document.getElementById("qlik1").style.display="block";
-		document.getElementById("qlik2").style.display="none";
-		document.getElementById("qlik3").style.display="none";
-		document.getElementById("qlik4").style.display="none";
-		document.getElementById("qlik5").style.display="none";
-	}
-	if(selectElement.selectedIndex==3){
-		document.getElementById("dashboard").innerHTML = dashboard3;
-		document.getElementById("qlik").style.display="none";
-		document.getElementById("qlik1").style.display="none";
-		document.getElementById("qlik2").style.display="block";
-		document.getElementById("qlik3").style.display="none";
-		document.getElementById("qlik4").style.display="none";
-		document.getElementById("qlik5").style.display="none";
-	}
-	if(selectElement.selectedIndex==4){
-		document.getElementById("dashboard").innerHTML = dashboard3;
-		document.getElementById("qlik").style.display="none";
-		document.getElementById("qlik1").style.display="none";
-		document.getElementById("qlik2").style.display="none";
-		document.getElementById("qlik3").style.display="block";
-		document.getElementById("qlik4").style.display="none";
-		document.getElementById("qlik5").style.display="none";
-	}
-	if(selectElement.selectedIndex==5){
-		document.getElementById("dashboard").innerHTML = dashboard3;
-		document.getElementById("qlik").style.display="none";
-		document.getElementById("qlik1").style.display="none";
-		document.getElementById("qlik2").style.display="none";
-		document.getElementById("qlik3").style.display="none";
-		document.getElementById("qlik4").style.display="block";
-		document.getElementById("qlik5").style.display="none";
-	}
-	if(selectElement.selectedIndex==6){
-		document.getElementById("dashboard").innerHTML = "";
-		document.getElementById("qlik").style.display="none";
-		document.getElementById("qlik1").style.display="none";
-		document.getElementById("qlik2").style.display="none";
-		document.getElementById("qlik3").style.display="none";
-		document.getElementById("qlik4").style.display="none";
-		document.getElementById("qlik5").style.display="block";
-	}
+
+selectElement.addEventListener('change', (event) => {
+if(selectElement.selectedIndex==0){
+	document.getElementById("qlik").style.display="none";
+	document.getElementById("qlik1").style.display="none";
+	document.getElementById("qlik2").style.display="none";
+	document.getElementById("qlik3").style.display="none";
+	document.getElementById("qlik4").style.display="none";
+	document.getElementById("qlik5").style.display="none";
+}
+if(selectElement.selectedIndex==1){
+	document.getElementById("qlik").style.display="block";
+	document.getElementById("qlik1").style.display="none";
+	document.getElementById("qlik2").style.display="none";
+	document.getElementById("qlik3").style.display="none";
+	document.getElementById("qlik4").style.display="none";
+	document.getElementById("qlik5").style.display="none";
+}
+if(selectElement.selectedIndex==2){
+	document.getElementById("qlik").style.display="none";
+	document.getElementById("qlik1").style.display="block";
+	document.getElementById("qlik2").style.display="none";
+	document.getElementById("qlik3").style.display="none";
+	document.getElementById("qlik4").style.display="none";
+	document.getElementById("qlik5").style.display="none";
+}
+if(selectElement.selectedIndex==3){
+	document.getElementById("qlik").style.display="none";
+	document.getElementById("qlik1").style.display="none";
+	document.getElementById("qlik2").style.display="block";
+	document.getElementById("qlik3").style.display="none";
+	document.getElementById("qlik4").style.display="none";
+	document.getElementById("qlik5").style.display="none";
+}
+if(selectElement.selectedIndex==4){
+	document.getElementById("qlik").style.display="none";
+	document.getElementById("qlik1").style.display="none";
+	document.getElementById("qlik2").style.display="none";
+	document.getElementById("qlik3").style.display="block";
+	document.getElementById("qlik4").style.display="none";
+	document.getElementById("qlik5").style.display="none";
+}
+if(selectElement.selectedIndex==5){
+	document.getElementById("qlik").style.display="none";
+	document.getElementById("qlik1").style.display="none";
+	document.getElementById("qlik2").style.display="none";
+	document.getElementById("qlik3").style.display="none";
+	document.getElementById("qlik4").style.display="block";
+	document.getElementById("qlik5").style.display="none";
+}
+if(selectElement.selectedIndex==6){
+	document.getElementById("qlik").style.display="none";
+	document.getElementById("qlik1").style.display="none";
+	document.getElementById("qlik2").style.display="none";
+	document.getElementById("qlik3").style.display="none";
+	document.getElementById("qlik4").style.display="none";
+	document.getElementById("qlik5").style.display="block";
+}
 });
-}, 1000);
 var inicio = 0;
 document.getElementById("btnCollapse").addEventListener('click', (event) => {
 
@@ -119,11 +108,8 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 		document.getElementById("panel").className = "collapsing";
 		setTimeout(() => { 
 			document.getElementById("panel").className = "col-sm-3 collapse1";
-			document.getElementById("dashboard").className = "col-sm-12";
+			document.getElementById("viz1585802439674").className = "tableauPlaceholder col-sm-12";
 			document.getElementById("btnCollapse").style.right = "2vw";
-			for(var i=0; i < document.getElementsByTagName("iframe").length; i++){
-				document.getElementsByTagName("iframe")[i].style.width = "97%"
-		}
 		}, 0.45);
 		inicio = 1;
 	}
@@ -133,11 +119,8 @@ document.getElementById("btnCollapse").addEventListener('click', (event) => {
 		document.getElementById("panel").className = "collapsing";
 		setTimeout(() => { 
 			document.getElementById("panel").className = "col-sm-3 collapse1 show";
-			document.getElementById("dashboard").className = "col-sm-9";
+			document.getElementById("viz1585802439674").className = "tableauPlaceholder col-sm-9";
 			document.getElementById("btnCollapse").style = "";
-			for(var i=0; i < document.getElementsByTagName("iframe").length; i++){
-				document.getElementsByTagName("iframe")[i].style.width = "70%"
-		}
 		}, 0.45);
 	}
 });
